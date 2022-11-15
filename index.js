@@ -1,3 +1,10 @@
+import writeEndpoint, { write } from './write.js'
+
 export default async function (fastify, opts) {
-	console.log('Hello World')
+	await fastify.register(import('./database.js'), opts)
+	await fastify.register(writeEndpoint, opts)
+}
+
+export {
+	write,
 }
