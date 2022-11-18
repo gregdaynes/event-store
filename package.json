@@ -27,6 +27,7 @@
     "fastify-plugin": "^4.3.0",
     "fluent-json-schema": "^4.0.0",
     "knex": "^2.3.0",
+    "piscina": "^3.2.0",
     "sqlite3": "^5.1.2"
   },
   "devDependencies": {
